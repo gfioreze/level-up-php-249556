@@ -13,8 +13,15 @@
 
 <?php
 
-function flip() {
+function flip(): string
+{
 	// Challenge: define this function
+	$number = rand(0, 1);
+	if ($number == 0) {
+		return "Heads";
+	} else {
+		return "Tails";
+	}
 }
 
 ?>
